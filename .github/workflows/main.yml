@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Buildozer Action
-      uses: kivy/buildozer-action@master
+      uses: ArtemGovorov/buildozer-action@v1
       with:
         buildozer_version: stable
         command: buildozer android debug
@@ -15,3 +15,4 @@ jobs:
       with:
         name: Mizo-Calculator-APK
         path: bin/*.apk
+ 
